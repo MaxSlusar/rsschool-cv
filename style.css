@@ -1,0 +1,166 @@
+/*позиционирование
+блочная модель (размеры, отступы)
+типографика (свойства шрифта)
+оформление (цвет фона, тень)
+анимация
+
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgb(48, 48, 48);
+  background-color: darkgrey;
+}
+
+.container {
+  max-width: 900px;
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+.container-2-columb {
+  display: flex;
+}
+
+.header__photo {
+  flex: 0 0 300px;
+  height: 300px;
+}
+
+.header__content {
+  flex: 0 0 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(247, 247, 247);
+  background-color: rgb(48, 48, 48);
+}
+
+.header__title {
+  margin: 0;
+  padding: 70px 10px 0px 10px;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.header__subtitle {
+  margin: 0;
+  padding: 0px 10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.navigation__nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.navigation__link {
+  padding: 0;
+  line-height: 20px;
+  color: rgb(247, 247, 247);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.navigation__link:hover {
+  color: rgb(133, 133, 133);
+  text-decoration: underline;
+}
+
+.main__aside {
+  flex: 0 0 300px;
+  padding: 40px;
+  background-color: rgb(221, 221, 221);
+}
+
+.main__content {
+  flex: 0 0 600px;
+  padding: 40px;
+  background-color:rgb(247, 247, 247) ;
+}
+
+.section__title {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section__link {
+  margin: 0px 25px;
+  padding: 0;
+  line-height: 20px;
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.section__link:hover {
+  color: rgb(48, 48, 48);
+  text-decoration: underline;
+}
+
+.section__item_colored {
+  color: rgb(170, 170, 170);
+}
+
+.section__code {
+  margin: 0px 25px;
+  font-family: monospace;
+  white-space: pre-line;
+  color: rgb(170, 170, 170);
+  background-color: rgb(255, 255, 255);
+}
+
+.section__code_colored {
+  color: rgb(48, 48, 48);
+}
+
+.container-1-columb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  color: rgb(247, 247, 247);
+  background-color: rgb(48, 48, 48);
+}
+
+.footer__link {
+  line-height: 20px;
+  color: rgb(247, 247, 247);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.footer__link:hover {
+  color: rgb(170, 170, 170);
+  text-decoration: underline;
+}
+
+.footer__rss {
+  width: 121px;
+  height: 45px;
+  background-image: url("./assets/img/rs_school_js.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
